@@ -1,0 +1,26 @@
+{
+  "name": "dynogels-promisified",
+  "version": "1.0.0",
+  "description": "Promisifies the DynamoDB library Dynogels using Bluebird",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewoh531/dynogels-promisified.git"
+  },
+  "keywords": [
+    "dynamodb",
+    "dynogels",
+    "aws",
+    "nosql"
+  ],
+  "author": "Andrew Oh",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/andrewoh531/dynogels-promisified/issues"
+  },
+  "homepage": "https://github.com/andrewoh531/dynogels-promisified#readme",
+  "dependencies": {
+    "bluebird": "^3.4.1",
+    "dynogels": "^5.1.0"
+  }
+}
