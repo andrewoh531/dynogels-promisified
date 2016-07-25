@@ -1,7 +1,7 @@
 {
   "name": "dynogels-promisified",
   "version": "1.0.0",
-  "description": "Promisifies the DynamoDB library Dynogels using Bluebird",
+  "description": "Promisifies the Dynogels (DynamoDB mapper) using Bluebird",
   "main": "index.js",
   "repository": {
     "type": "git",

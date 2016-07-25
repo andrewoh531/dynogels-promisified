@@ -1,9 +1,9 @@
 # dynogels-promisified
-I take no credit for this code. It is a fork of [dyn-promisified](https://github.com/servel333/dyn-promisified)
-modified to use [Dynogels](https://github.com/clarkie/dynogels) instead of dyn.
+I take no credit for this code. It is inspired by [vogels-promisified](https://github.com/servel333/vogels-promisified)
+but modified to use [Dynogels](https://github.com/clarkie/dynogels).
 
-This package promisifies the APIs in [Dynogels](https://github.com/clarkie/dynogels) using [Bluebird](http://bluebirdjs.com/docs/api-reference.html) using the default 'Async' appendix to the original
-method names.
+This package promisifies the functions in [Dynogels](https://github.com/clarkie/dynogels) using [Bluebird](http://bluebirdjs.com/docs/api-reference.html) using the default 'Async' suffix. i.e. all methods in
+Dynogels are modified with an 'Async' suffix.
 
 ## Usage
 
@@ -14,19 +14,17 @@ var dynogels = require("dynogels-promisified");
 ## Example
 
 ```javascript
-var User = module.exports = dyn.define("User", {
-  hashKey : "email",
-
-  timestamps : true,
-
+var User = module.exports = dynogels.define("User", {
+  hashKey : "userId",
+  timestamps : false,
   schema : {
-    _id : dyn.types.uuid(),
-    email : Joi.string().email(),
+    userId: dynogels.types.uuid(),
+    name: Joi.string(),
   },
 });
 
 User
-  .getAsync(email)
+  .getAsync(userId)
   .then(function(user){
     // ...
   })
@@ -36,7 +34,7 @@ User
 
 User
   .scan()
-  .where("_id").equals(userId)
+  .where("userId").equals(userId)
   .execAsync()
   .then(function(user){
     // ...
