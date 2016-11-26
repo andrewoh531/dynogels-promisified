@@ -14,13 +14,13 @@
     "nosql"
   ],
   "author": "Andrew Oh",
-  "license": "MIT License",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/andrewoh531/dynogels-promisified/issues"
   },
   "homepage": "https://github.com/andrewoh531/dynogels-promisified#readme",
   "dependencies": {
     "bluebird": "^3.4.1",
-    "dynogels": "^5.1.0"
+    "dynogels": "^6.1.1"
   }
 }
