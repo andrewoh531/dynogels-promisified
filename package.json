@@ -23,6 +23,6 @@
     "bluebird": "^3.4.6"
   },
   "peerDependencies": {
-    "dynogels": "6.x.x"
+    "dynogels": ">=6.0.0"
   }
 }
