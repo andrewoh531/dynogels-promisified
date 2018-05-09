@@ -1,6 +1,6 @@
 {
   "name": "dynogels-promisified",
-    "version": "1.0.4",
+  "version": "1.0.4",
   "description": "Promisifies Dynogels' (DynamoDB mapper) methods using Bluebird",
   "main": "index.js",
   "repository": {
@@ -20,9 +20,9 @@
   },
   "homepage": "https://github.com/andrewoh531/dynogels-promisified#readme",
   "dependencies": {
-    "bluebird": "^3.4.6"
+    "bluebird": "^3.5.1"
   },
   "peerDependencies": {
-    "dynogels": ">=6.0.0"
+    "dynogels": ">=9.0.0"
   }
 }
